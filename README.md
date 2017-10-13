@@ -4,13 +4,15 @@ Ghost is a free, open, simple blogging platform. Visit the project's website at 
 
 ## Note regarding Ghost version 1.X
 
-The latest releases of Ghost dropped support for a couple of things that complicate one-button deployment on Heroku (see issues #90 and #91 for background). Until we can establish the best way to support deploying the latest version of Ghost to Heroku, this repository will remain at v0.11.11. If you have suggestions, please open an issue or pull request. In the meantime, thank you for your patience.
+The latest releases of Ghost dropped support for a couple of things that complicate one-button deployment on Heroku (see issues #90 and #91 for background). Until we can establish the best way to support deploying the latest version of Ghost to Heroku, this repository will remain at v0.11.x. If you have suggestions, please open an issue or pull request. In the meantime, thank you for your patience.
+
+Part of the rationale here is to also be able to continue the usage of postgres rather than mysql.  In my case, I will also be storing the customized theme (https://github.com/godofredoninja/Mapache) that I use in this repo, which may not be desirable (but which you can nuke in your copy)
 
 ## Deploying on Heroku
 
 To get your own Ghost blog running on Heroku, click the button below:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cobyism/ghost-on-heroku)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jamiesmith/my-ghost-on-heroku)
 
 Fill out the form, and you should be cooking with gas in a few seconds.
 
@@ -72,8 +74,9 @@ This repository is essentially a minimal web application that specifies [Ghost a
 
 After deploying your own Ghost blog, you can update it by running the following commands:
 ```
-heroku git:clone --app YOURAPPNAME && cd YOURAPPNAME
-git remote add origin https://github.com/cobyism/ghost-on-heroku
+heroku git:clone --app YOURAPPNAME 
+cd YOURAPPNAME
+git remote add origin https://github.com/jamiesmith/my-ghost-on-heroku
 git pull origin master # may trigger a few merge conflicts, depending on how long since last update
 git push heroku master
 ```
@@ -83,7 +86,7 @@ This will pull down the code that was deployed to Heroku so you have it locally,
 
 ## Problems?
 
-If you have problems using your instance of Ghost, you should check the [official documentation](http://support.ghost.org/) or open an issue on [the official issue tracker](https://github.com/TryGhost/Ghost/issues). If you discover an issue with the deployment process provided by *this repository*, then [open an issue here](https://github.com/cobyism/ghost-on-heroku).
+If you have problems using your instance of Ghost, you should check the [official documentation](http://support.ghost.org/) or open an issue on [the official issue tracker](https://github.com/TryGhost/Ghost/issues). If you discover an issue with the deployment process provided by *this repository*, then [open an issue here](https://github.com/jamiesmith/my-ghost-on-heroku).
 
 ## License
 

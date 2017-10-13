@@ -1,0 +1,68 @@
+:root {
+  --main-bg-color: #424242;
+}
+
+.btn, .nav-mob-copyright a, .pagination .pagination-link, a {
+    color: #eaeaea;
+}
+mark {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#37a6fe), to(#37a6fe));
+    background-image: -webkit-linear-gradient(top, #37a6fe, #37a6fe);
+    background-image: -o-linear-gradient(top, #37a6fe, #37a6fe);
+    background-image: linear-gradient(180deg, #37a6fe, #37a6fe);
+}
+.btn.btn-primary, .cover, .header.toolbar-shadow, .mapache-load-more:hover, .nav-mob, .post-actions-comment, .sidebar .title-primary, .u-tags:hover {
+    background-color: #212121!important;
+}
+.form-control:focus {
+    border-color: #212121!important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(1, 87, 155, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(1, 87, 155, .6);
+}
+.btn.btn-download, .btn.btn-download-cloud {
+    background-color: #212121;
+}
+.btn.btn-download-cloud:hover, .btn.btn-download:hover {
+    background-color: #797979;
+}
+.pagination .pagination-link:before {
+    border: 2px solid #212121;
+}
+.mapache-load-more:hover {
+    border-color: #212121!important;
+}
+.pagination .pagination-link.loanding:before {
+    border-bottom: 2px solid #212121;
+}
+blockquote {
+    border-color: #212121;
+}
+
+body {
+	background-color: var(--main-bg-color);
+    color: #eaeaea;
+}
+
+.entry-title {
+    color: #eaeaea;
+}
+
+.entry-title:hover {
+    color: #777;
+}
+
+.post-title {
+    color: #eaeaea;
+}
+.post-author {
+    background-color: var(--main-bg-color);
+ }
+
+.post-author a:hover {
+	font-weight: bold;
+}
+ 
+ 
+.footer {
+	color: #222;
+}
