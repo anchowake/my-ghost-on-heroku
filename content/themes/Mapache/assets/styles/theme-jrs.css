@@ -68,7 +68,7 @@ body {
 }
 
 pre {
-	background-color: var(--main-bg-color);
+	background-color: var(--main-bg-color)!important;
     color: var(--main-text-color);
 } 
 pre code {
