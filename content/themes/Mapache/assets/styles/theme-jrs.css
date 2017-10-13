@@ -69,9 +69,28 @@ body {
 
 pre {
 	background-color: var(--main-bg-color);
-    color: var(--main-text-color);;
+    color: var(--main-text-color);
 } 
- 
+pre code {
+    background: var(--main-bg-color);
+	background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 0;
+    text-shadow: 0 1px #fff;
+}
+
+.sidebar-post--link {
+    background-color: var(--main-bg-color);
+}
+
+.sidebar-post--title {
+    color: var(--main-text-color);
+}
+
+.sidebar-post--border {
+    color: var(--main-text-color);
+}
+
 .footer {
 	color: #222;
 }
